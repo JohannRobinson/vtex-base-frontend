@@ -1,0 +1,10 @@
+node_modules/
+build/
+temp
+*.log
+.idea
+.sass-cache/
+source/fonts/icon.woff
+source/fonts/icon.eot
+source/fonts/icon.svg
+source/fonts/icon.woff2

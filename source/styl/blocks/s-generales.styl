@@ -1,0 +1,124 @@
+//Title
+.g-title
+    font-size 28px
+    text-transform uppercase
+    &.v2
+        font-size 17px
+    &.v3
+        font-size 24px
+
+//Btn
+.g-btn
+    display inline-block
+    text-align center
+    font-size 14px
+    color c-1
+    background c-4
+    padding 7px 15px
+    box-sizing border-box
+    text-transform uppercase
+    span,em
+        display inline-block
+        transition all .3s ease
+    span
+        margin-left 4px
+    &.v2
+        background c-2
+        color c-0
+        border-radius 3px
+    @media screen and (min-width 1025px)
+        &:hover
+            span
+                opacity 0
+                visibility hidden
+                transform scale(0)
+            em
+                transform translate(10px)
+
+//Tabla
+.g-table
+    width 100%
+
+.g-tab-top
+    display flex
+    align-items center
+    margin-bottom 8px
+    .g-btn
+        margin-right 0
+
+.g-tab-title
+    margin 0
+    font-size 17px
+    font-weight bold
+
+.g-tab-header,.g-tab-item
+    display flex
+    align-items center
+    flex-wrap wrap
+
+.g-tab-header
+    background c-2
+    text-transform uppercase
+    font-weight bold
+    font-size 12px
+
+.g-tab-cnt
+    font-size 13px
+
+.g-tab-cl
+    width 20%
+    padding 9.5px
+    box-sizing border-box
+
+.g-tab-id
+    width 22%
+
+.g-tab-fecha
+    width 18%
+
+//Ver detalle
+.g-ver-det
+    position relative
+    &:before
+        position absolute
+        content ''
+        width 0
+        height 1px
+        background c-0
+        transition all .3s ease
+        left 0
+        bottom 0
+    &:hover
+        &:before
+            width 100%
+
+//Contador
+.g-counter-cnt
+    display flex
+    align-items stretch
+    text-align center
+
+.g-counter-item
+    display flex
+    align-items center
+    justify-content center
+    width 32%
+    margin-right 2%
+    background c-2
+    height 170px
+    &:last-child
+        margin-right 0
+
+.g-counter
+    font-size 13px
+    span
+        display block
+        width 100%
+        font-size 50px
+        margin-bottom 5px
+        line-height 1
+    em
+        display block
+        max-width 100px
+        font-weight bold
+        line-height 1.4

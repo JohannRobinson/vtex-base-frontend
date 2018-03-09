@@ -1,0 +1,9 @@
+{
+  "versions": {
+    "0": {
+      "web": [
+        "source/vendor/main.js"
+      ]
+    }
+  }
+}

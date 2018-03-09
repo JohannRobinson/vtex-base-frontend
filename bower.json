@@ -1,0 +1,31 @@
+{
+  "name": "vtex-speed-gulp",
+  "description": "Herramientas de desarrollo para VTEX: proxy, compilación, minificación, optimización y más.",
+  "main": "",
+  "authors": [
+    "Jorge Torres <jorge.torres@i2btech.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "vtex",
+    "speed",
+    "vtex",
+    "speed",
+    "gulp",
+    "sass",
+    "compass"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}

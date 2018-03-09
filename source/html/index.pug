@@ -1,0 +1,195 @@
+extends ./inc/_layout
+block wBody
+	section#page.dashboard
+		.inner-dashboard.wancho
+			.b1-dash-top
+				.b1-item-detalle
+					.b1-left
+						h2.g-title.v3 Bienvenido
+						.b1-username Juan Carlos Rodriguez
+						.b1-empresa Administrador
+							br 
+							| Remax Inmobiliaria
+					.b1-right
+						.b1-estado
+							h2 ESTADO CREDITICIO 
+								strong ÚLTIMOS 30 DÍAS
+							.b1-total-compra
+								span S/ 24,340
+								| Total comprado
+							.b1-total-saldo
+								span S/ 4,340
+								| Saldo disponible
+				.b1-item-detalle
+					.b1-left
+						h2.g-title.v3 Datos del perfil
+						.b1-cnt-datos
+							.b1-item-datos
+								h3 Cliente:
+								.b1-info Gold
+							.b1-item-datos
+								h3 RUC:
+								.b1-info 20111111112
+							.b1-item-datos
+								h3 Razón Social:
+								.b1-info Remax Inmobiliaria S.A.
+							.b1-item-datos
+								h3 Teléfono:
+								.b1-info 983337766
+							.b1-item-datos
+								h3 Dirección:
+								.b1-info 28 de Julio 399, Miraflores
+					.b1-right
+						h2.g-title.v3 Pendiente de revisión:
+						.g-counter-cnt
+							.g-counter-item
+								.g-counter
+									span 10
+									em Solicitudes últimos 30 días
+							.g-counter-item
+								.g-counter
+									span 35
+									em Cotizaciones últimos 30 días
+							.g-counter-item
+								.g-counter
+									span 8
+									em Compras últimos 30 días
+			.b1-dash-detalle
+				.b1-item-detalle
+					.b1-left
+						h2.g-title.v2 Compras (Últimos 30 días)
+						.g-counter-cnt
+							.g-counter-item
+								.g-counter
+									span 5
+									em Compras Aprobadas
+							.g-counter-item
+								.g-counter
+									span 2
+									em Compras Rechazadas
+							.g-counter-item
+								.g-counter
+									span 1
+									em Compras Pagadas
+					.b1-right
+						.g-table
+							.g-tab-top
+								h3.g-tab-title Últimas Compras
+								a(href="compras.html").g-btn
+									em Ver todos
+									span +
+							.g-tab-header
+								.g-tab-cl.g-tab-id N° Transacción
+								.g-tab-cl.g-tab-fecha Realizada
+								.g-tab-cl.g-tab-monto Monto
+								.g-tab-cl.g-tab-estado Estado
+								.g-tab-cl.g-tab-detalle Detalle
+							.g-tab-cnt
+								.g-tab-item
+									.g-tab-cl.g-tab-id
+										a(href="") 1012658990
+									.g-tab-cl.g-tab-fecha 19/10/2018
+									.g-tab-cl.g-tab-monto S/ 12,050
+									.g-tab-cl.g-tab-estado Finalizada
+									.g-tab-cl.g-tab-detalle
+										a(href="").g-ver-det Ver detalle
+								.g-tab-item
+									.g-tab-cl.g-tab-id
+										a(href="") 1012658990
+									.g-tab-cl.g-tab-fecha 19/10/2018
+									.g-tab-cl.g-tab-monto S/ 12,050
+									.g-tab-cl.g-tab-estado Finalizada
+									.g-tab-cl.g-tab-detalle
+										a(href="").g-ver-det Ver detalle
+								.g-tab-item
+									.g-tab-cl.g-tab-id
+										a(href="") 1012658990
+									.g-tab-cl.g-tab-fecha 19/10/2018
+									.g-tab-cl.g-tab-monto S/ 12,050
+									.g-tab-cl.g-tab-estado Finalizada
+									.g-tab-cl.g-tab-detalle
+										a(href="").g-ver-det Ver detalle
+								.g-tab-item
+									.g-tab-cl.g-tab-id
+										a(href="") 1012658990
+									.g-tab-cl.g-tab-fecha 19/10/2018
+									.g-tab-cl.g-tab-monto S/ 12,050
+									.g-tab-cl.g-tab-estado Finalizada
+									.g-tab-cl.g-tab-detalle
+										a(href="").g-ver-det Ver detalle
+				.b1-item-detalle
+					.b1-left
+						h2.g-title.v2 Cotizaciones (Últimos 30 días)
+						.g-counter-cnt
+							.g-counter-item
+								.g-counter
+									span 5
+									em Cotizaciones Revisadas
+							.g-counter-item
+								.g-counter
+									span 5
+									em Cotizaciones sin revisar
+							.g-counter-item
+								.g-counter
+									span 2
+									em Cotizaciones Caducadas
+					.b1-right
+						.g-table
+							.g-tab-top
+								h3.g-tab-title Últimas Cotizaciones
+								a(href="cotizaciones.html").g-btn
+									em Ver todos
+									span +
+							.g-tab-header
+								.g-tab-cl.g-tab-id N° Cotización
+								.g-tab-cl.g-tab-fecha Realizada
+								.g-tab-cl.g-tab-fechacad Caduciddad
+								.g-tab-cl.g-tab-estado Estado
+								.g-tab-cl.g-tab-detalle Detalle
+							.g-tab-cnt
+								.g-tab-item
+									.g-tab-cl.g-tab-id
+										a(href="") 1012658990
+									.g-tab-cl.g-tab-fecha 19/10/2018
+									.g-tab-cl.g-tab-fechacad 19/10/2018
+									.g-tab-cl.g-tab-estado Revisada
+									.g-tab-cl.g-tab-detalle
+										a(href="").g-ver-det Ver detalle
+				.b1-item-detalle
+					.b1-left
+						h2.g-title.v2 Solicitudes (Últimos 30 días)
+						.g-counter-cnt
+							.g-counter-item
+								.g-counter
+									span 4
+									em Solicitudes Respondidas
+							.g-counter-item
+								.g-counter
+									span 5
+									em Solicitudes en revisión
+							.g-counter-item
+								.g-counter
+									span 10
+									em Solicitudes Pendientes
+					.b1-right
+						.g-table
+							.g-tab-top
+								h3.g-tab-title Últimas Solicitudes
+								a(href="solicitudes.html").g-btn
+									em Ver todos
+									span +
+							.g-tab-header
+								.g-tab-cl.g-tab-id N° Solicitud
+								.g-tab-cl.g-tab-fecha Realizada
+								.g-tab-cl.g-tab-monto Monto
+								.g-tab-cl.g-tab-estado Estado
+								.g-tab-cl.g-tab-detalle Detalle
+							.g-tab-cnt
+								.g-tab-item
+									.g-tab-cl.g-tab-id
+										a(href="") 1012658990
+									.g-tab-cl.g-tab-fecha 19/10/2018
+									.g-tab-cl.g-tab-monto S/ 12,050
+									.g-tab-cl.g-tab-estado Respondida
+									.g-tab-cl.g-tab-detalle
+										a(href="").g-ver-det Ver detalle

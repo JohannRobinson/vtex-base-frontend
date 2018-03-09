@@ -1,0 +1,99 @@
+.dashboard
+    padding 50px 0
+    color c-0
+    .g-tab-cnt
+        .g-tab-id
+            font-weight bold
+            a
+                position relative
+                &:before
+                    content ''
+                    position absolute
+                    width 0
+                    height 1px
+                    background c-0
+                    bottom 0
+                    left 0
+                    transition all .3s ease
+                &:hover
+                    &:before
+                        width 100%
+
+        .g-tab-monto
+            font-weight bold
+
+.b1-dash-detalle
+    margin-top 30px
+    .g-title
+        margin 6.5px 0 14.5px
+
+.b1-item-detalle
+    display flex
+    align-items flex-start
+    justify-content space-between
+    flex-wrap wrap
+    margin-bottom 25px
+    &:last-child
+        margin-bottom 0
+
+.b1-left
+    width 43%
+
+.b1-right
+    width 54%
+
+.b1-username
+    font-size 31px
+    margin-bottom 7px
+
+.b1-empresa
+    font-size 17px
+    font-weight bold
+    text-transform uppercase
+    line-height 1.4
+
+.b1-cnt-datos
+    padding 14px
+    box-sizing border-box
+    border 1px solid c-2
+
+.b1-item-datos
+    display flex
+    align-items center
+    justify-content space-between
+    line-height 1
+    padding 6px 0
+    h3
+        width 30%
+        font-size 16px
+        margin-bottom 0
+
+.b1-info
+    width 67%
+    font-size 16px
+    font-weight bold
+
+.b1-estado
+    font-size 0
+    h2
+        font-size 24px
+        font-weight normal
+        margin-bottom 17px
+    strong
+        font-size 24px
+
+.b1-total-compra,.b1-total-saldo
+    display inline-block
+    width 50%
+    padding 0 7px
+    box-sizing border-box
+    font-size 22px
+    span
+        font-size 38px
+        display block
+        margin-bottom 7px
+
+.b1-total-saldo
+    span
+        color c-5
+
