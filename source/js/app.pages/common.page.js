@@ -1,4 +1,4 @@
-B2B.pages.common = new B2B.constructor.page("common"),
-B2B.pages.common.DOMReady = function () {
-    // B2B.services.estado.consultar();
+APP.pages.common = new APP.constructor.page("common"),
+APP.pages.common.DOMReady = function () {
+    // APP.services.estado.consultar();
 }

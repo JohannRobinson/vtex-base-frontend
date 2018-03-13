@@ -265,7 +265,7 @@ gulp.task('iconfont', function() {
   gulp.src(['source/img/svg/*.svg'])
     .pipe(iconfontCSS({
       fontName: 'icon',
-      targetPath: '../styl/inc/_icons.styl',
+      targetPath: '../styl/config/icons.styl',
       fontPath: '/arquivos/'
     }))
     .pipe(iconfont({
@@ -295,7 +295,7 @@ gulp.task('sprite', function() {
 		.pipe(browserSync.reload({ stream: true }));
 
 	spriteData.css
-		.pipe(gulp.dest('source/styl/inc/'))
+		.pipe(gulp.dest('source/styl/config/'))
 		.pipe(browserSync.reload({ stream: true }));
 });
 

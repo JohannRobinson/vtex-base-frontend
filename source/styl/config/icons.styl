@@ -1,0 +1,26 @@
+@font-face {
+	font-family: "icon";
+	src: url('/arquivos/icon.eot');
+	src: url('/arquivos/icon.eot?#iefix') format('eot'),
+		url('/arquivos/icon.woff2') format('woff2'),
+		url('/arquivos/icon.woff') format('woff'),
+		url('/arquivos/icon.ttf') format('truetype'),
+		url('/arquivos/icon.svg#icon') format('svg');
+}
+
+.icon:before {
+	font-family: "icon";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-facebook:before {
+	content: "\E001";
+}

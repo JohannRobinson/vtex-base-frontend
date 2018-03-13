@@ -1,20 +1,20 @@
 
-window.B2B = window.B2B || {},
+window.APP = window.APP || {},
 
-    B2B.pages = {},
-    B2B.modules = {},
-    B2B.services = {},
+    APP.pages = {},
+    APP.modules = {},
+    APP.services = {},
 
-    B2B.init = function () {
-        B2B.pages.common.init(),
+    APP.init = function () {
+        APP.pages.common.init(),
             i2bmod.MasterData.setStore('vvee'),
-            $.each(B2B.pages, function () {
+            $.each(APP.pages, function () {
                 $("section#page").hasClass(this.pageClass) && this.hasOwnProperty("init") && this.init()
             })
     }
 
-B2B.constructor = {},
-    B2B.constructor.page = function (pageClass) {
+APP.constructor = {},
+    APP.constructor.page = function (pageClass) {
         this.pageClass = pageClass,
             this.DOMReady = function () { },
             this.winLoad = function () { },
